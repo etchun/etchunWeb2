@@ -2,6 +2,13 @@
   [<img src="../../media/img/links.png" width="15"> docsify plugin: Flexible Alerts@fzankl](https://github.com/fzankl/docsify-plugin-flexible-alerts)
   ![展示图](../../media/img/FlexibleAlerts.png "展示图")
 
+  测试：
+  两点：<img src="../../media/img/links.png" width="20"> 
+  一点：<img src="./media/img/links.png" width="20"> 
+  两点：<img src="../../media/img/docsify-example-panels.jpg" width="200px">
+  一点：<img src="./media/img/docsify-example-panels.jpg" width="200px">
+  一点2：<img src="././media/img/docsify-example-panels.jpg" width="200px">
+
  **使用方法：**  
 #### 1、html 中加载 js 插件  <!-- {docsify-ignore} --> 
   ```html
