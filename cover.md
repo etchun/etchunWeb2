@@ -1,6 +1,6 @@
 <!-- _coverpage.md 封面页 -->
 
-![logo](../../media/icon.png ":size=50%")
+![logo](/media/icon.png ":size=50%")
 
 [<i class="fa-solid fa-location-arrow fa-beat fa-2xl" style="color: #d62929;"><font face="Algerian"> etchunWeb <b><small>2023</small></b></font></i>](/home.md)
 
