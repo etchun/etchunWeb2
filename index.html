@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- renderer 渲染器 -->
+  <meta name="renderer" content="webkit">
+  <!-- viewport 视口布局 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  
+  <!-- description 网站描述+关键字+作者 -->
+  <meta name="description" content="etchun个人站,收集、整理日常杂项">
+  <meta name="keywords" content="动漫,游戏,电影,字幕">
+  <title>etchun个人站</title>
+
+  <!-- docsify 的主题样式: Sample (https://jhildenbiddle.github.io/docsify-themeable) -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <!-- <link rel="stylesheet" href="/plugins/css/vue.css">  -->  <!-- 可换另外一种 -->
+
+  <!--NF PollyJS https://netflix.github.io/pollyjs/-->
+  <!-- <link rel="stylesheet" href="plugins/css/NF.vue.css" /> -->
+  <!-- <link rel="stylesheet" href="plugins/css/NF.styles.css" /> -->
+
+  <!-- Amazon-Style Dictionary https://github.com/amzn/style-dictionary-->
+  <link rel="stylesheet" href="/plugins/css/Amazon.vue.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500|Source+Sans+Pro:400,400i,600" rel="stylesheet">
+  <link rel="stylesheet" href="/plugins/css/Amazon.styles.css">
+
+  <!-- docsify-darklight-theme -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css"/> -->
+  
+  <!-- docsify-darklight-themeable -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+  <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark"> -->
+  
+  <!-- gif 播放控制插件 -->
+  <link rel="stylesheet" href="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.css">
+
+  <!-- fontawesome 表情标签？ -->
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/fontawesome.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
+  <link rel="stylesheet" href="//unpkg.com/@fortawesome/fontawesome-free/css/solid.css" />
+</head>
+<body>
+  <!-- 定义 el 加载时 Loading... 的显示内容；如果更改了 el 的配置，需要将该元素加上 data-app 属性。-->
+  <div id="app">有点忙，请稍等一下！~</div>
+  <script>
+    window.$docsify = {
+      //通用设置
+      // -----------------------------------------------------
+      // 会显示在侧边栏顶部标题
+      name: '<b>etchunWeb</b>',
+      logo: '/media/icon.png width=50%',
+      repo: '',
+      // docsify 初始化的挂载元素，可以是一个 CSS 选择器，默认为 #app 如果不存在就直接绑定在 body 上。
+      el: '#app',
+      // themeColor: '#3F51B5',
+      // 点击标题后的跳转地址
+      nameLink: '/',
+      // 开启侧边栏,加载_sidebar.md文件【√】
+      loadSidebar: true,
+      // 限制各层目录的侧边栏自动读取所在文件夹的/_sidebar.md；
+      alias: {
+      '/md/.*/': '/home.md',
+      },
+      subMaxLevel: 7, // 侧边栏同时开启文档内自动目录功能，目录的最大层级设置，0~7。
+      // 如果想忽略特定的标题，可以写文档时在标题后添加 <!-- {docsify-ignore} --> 。
+      // 要忽略特定文档上的所有标题，可在页面的第一个标题后添加 <!-- {docsify-ignore-all} --> 。
+      sidebarDisplayLevel: 0,  // 侧边栏自动展开层数，1 为展开到第 2 层。
+      // 加载自定义导航栏,需要目录下有_navbar.md文件【√】
+      loadNavbar: true,
+      // 指定开始页，入口文件改为 /home.md
+      homepage: 'home.md',
+      // 开启封面页，需要目录下有_coverpage.md文件
+      coverpage: true,
+      coverpage: 'cover.md', // 重新自定义封面文件名
+      onlyCover: true, // false 封面和首页默认同时出现，ture 访问首页只加载封面。
+      auto2top: true, // 切换页面后跳回页面顶部
+      // 滚动到锚点时与顶部的距离
+      topMargin: 25,
+      // 移动设备合并导航栏到侧边栏
+      mergeNavbar: true,
+      // 是否禁用 emoji 解析，true 只显示为文本，不解释成表情。
+      noEmoji: false,
+      // emoji 解析风格，false 使用GitHub风格的表情风格；true 平台本机表情渲染风格
+      nativeEmoji: false,
+      //  插件设置
+      // ---------------------------------------------------------------
+       search: {
+         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+         paths: 'auto',
+         placeholder: ' 搜索 ',
+         noData: '😞 找不到结果 ',
+         depth: 6, // 搜索标题的最大层级, 1 - 6
+         hideOtherSidebarContent: true, // 是否隐藏其他侧边栏内容【？】
+         namespace: 'etchun个人站' // 避免搜索索引冲突，同一域下的多个网站之间【？】
+       },
+      //  搜索设置
+      // ---------------------------------------------------------------
+      pagination: {
+        previousText: 'previous',
+        nextText: 'next',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      //  分页导航插件
+      // ----------------------------------------------------
+      // note、tip、warning、attention 四种不同颜色，8种风格，lable、icon 可改内容以及显隐。
+      'flexible-alerts': {
+        style: 'callout',  // callout(默认), flat 两种风格，可统一设定，也可每次添加 style 属性。
+        note: {
+          label: "备注"
+        },
+        tip: {
+          label: "提示"
+        },
+        warning: {
+          label: "警告"
+        },
+        attention: {
+          label: "注意"
+        }
+      },
+      //  文本高亮警报
+      // ---------------------------------------------
+      copyCode: {
+        buttonText: '复制',
+        errorText: '错误',
+        successText: '已复制',
+      },
+      //  代码一键复制 
+      // -----------------------------------------------
+      mermaidConfig: {
+        querySelector: ".mermaid"
+      },
+      //  渲染流程图
+      // ------------------------------------------------
+      timeUpdater: {
+        text: "<div align='right' width='200px' style='color:gray;font-size:20px'>最后更新：{docsify-updated}</div>",
+        formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+        whereToPlace: "top",  // "top" or "bottom", default to "bottom"
+      },
+      // 给文档增加更新时间
+      // ------------------------------------------------
+    };
+  </script>
+  
+  <!-- 回到顶部功能 -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.goup({
+        trigger: 100,
+        bottomOffset: 12,
+        locationOffset: 15,
+        //title: 'TOP',
+        titleAsText: true
+      });
+    });
+  </script>
+
+  <!-- 渲染流程图 -->
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <!-- Amazon-Style Dictionary 的js依赖 -->
+  <script src="//unpkg.com/docsify@4.12.1/lib/docsify.min.js"></script>
+
+  <!-- docsify的js依赖 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
+
+  <!-- NF使用的search插件 -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script> -->
+  
+  <!-- 搜索插件 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  
+
+  <!-- 如果页面上的脚本是外部脚本(即：通过 src 属性导入 js 文件)，则需要此插件才能使其他外链插件正常运行。-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+
+  <!-- 解析emoji字符串插件 如不想解析成表情符号，可使用&colon;或&#58; 。例如，&#58;100:。显示为，“:100:” -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+  <!-- 图片缩放 - 忽略某张图片：![](/image.png ":no-zoom") -->
+  <!-- <script src="/plugins/js/zoom-image.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/zoom-image.min.js"></script>
+  
+  <!-- 分页导航 -->
+  <script src="/plugins/js/docsify-pagination.min.js"></script>
+  
+  <!-- 代码高亮 -->
+  <script src="/plugins/js/prism-bash.js"></script>
+  <script src="/plugins/js/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="/plugins/js/md5.js"></script>
+
+  <!-- 文本高亮警报 -->
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+  <!-- 代码一键复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+  <!-- gif 播放控制插件 -->
+  <script src="//unpkg.com/docsify-gifcontrol/dist/docsify-gifcontrol.js"></script>
+
+  <!-- fontawesome 表情标签？ -->
+  <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
+
+  <!-- 侧边栏自动折叠展开插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  
+  <!-- 渲染流程图 -->
+  <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script>
+
+  <!-- docsify-darklight-theme -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js" type="text/javascript"></script> -->
+  
+  <!-- docsify-darklight-themeable -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js" type="text/javascript"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js" type="text/javascript"></script> -->
+  
+  <!-- docsify-updated -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
+</body>
+</html>
