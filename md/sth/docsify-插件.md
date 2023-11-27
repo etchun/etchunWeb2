@@ -2,10 +2,6 @@
   [<img src="./media/img/links.svg" width="15"> docsify plugin: Flexible Alerts@fzankl](https://github.com/fzankl/docsify-plugin-flexible-alerts)
   ![展示图](../../media/img/FlexibleAlerts.png "展示图")
 
-  测试：
-  一点
-  ![展示图](./media/img/FlexibleAlerts.png "展示图")
-
  **使用方法：**  
 #### 1、html 中加载 js 插件  <!-- {docsify-ignore} --> 
   ```html
