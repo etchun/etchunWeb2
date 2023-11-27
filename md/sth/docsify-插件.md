@@ -1,5 +1,5 @@
 ### ● 高亮警报  
-  [<img src="../../media/img/links.svg" width="20" height="15"> docsify plugin: Flexible Alerts@fzankl](https://github.com/fzankl/docsify-plugin-flexible-alerts)
+  [<img src="../../media/img/links.png" width="15"> docsify plugin: Flexible Alerts@fzankl](https://github.com/fzankl/docsify-plugin-flexible-alerts)
   ![展示图](../../media/img/FlexibleAlerts.png "展示图")
 
  **使用方法：**  
@@ -91,7 +91,7 @@
   - - -
 
 ### ● Gif 播放控制  
-  [<img src="../../media/img/links.svg" width="20" height="15"> docsify-gifcontrol@gbodigital](https://github.com/gbodigital/docsify-gifcontrol)  
+  [<img src="../../media/img/links.png" width="15"> docsify-gifcontrol@gbodigital](https://github.com/gbodigital/docsify-gifcontrol)  
   > **鼠标悬停播放效果：(默认)**  
   ![鼠标悬停播放效果](../../media/img/2301090_3_8c32dd7db.gif)  
 
@@ -126,14 +126,15 @@
 - - -
 
 ### ● 右侧代码面板  
-  [<img src="../../media/img/links.svg" width="20" height="15"> docsify-example-panels@VagnerDomingues](https://github.com/VagnerDomingues/docsify-example-panels)  
-  > 展示图<br/><img src="../../media/img/docsify-example-panels.jpg" width="50%">
+  [<img src="../../media/img/links.png" width="15"> docsify-example-panels@VagnerDomingues](https://github.com/VagnerDomingues/docsify-example-panels)  
+  > 展示图<br/>
+  <img src="../../media/img/docsify-example-panels.jpg" width="200px">
 
  **使用方法**
 - - -
 
 ### ● fontawesome 字体图标  
-  [<img src="../../media/img/links.svg" width="20" height="15"> docsify-fontawesome@erickjx](https://github.com/erickjx/docsify-fontawesome)  
+  [<img src="../../media/img/links.png" width="15"> docsify-fontawesome@erickjx](https://github.com/erickjx/docsify-fontawesome)  
   Docsify 的 FontAwesome 字体图标插件。
  
  **使用方法**
@@ -156,7 +157,7 @@
 - - -
 
 ### ● 文档添加更新时间
-  [<img src="../../media/img/links.svg" width="20" height="15"> docsify-updated@pfeak](https://github.com/pfeak/docsify-updated)  
+  [<img src="../../media/img/links.png" width="15"> docsify-updated@pfeak](https://github.com/pfeak/docsify-updated)  
   为每个 docsify markdown 文档增加更新时间。  
   示例图片：
   > ![Alt text](../../media/img/docsify-updated1.png)
