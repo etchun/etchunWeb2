@@ -9,3 +9,6 @@
  > [!note|label:2023-11-26|iconVisibility:hidden]
  > ### [Markdown 效果测试](/md/sth/Markdown测试效果.md)
  > Markdown 的一些基础语法，测试渲染效果用。
+
+
+[测试3](/md/sth/sth2/测试3.md)
