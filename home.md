@@ -3,8 +3,8 @@
 一个人站，暂时不知道写些什么好~ 先架好吧 :joy:
 - - -
  > [!attention|label:2023-11-28|iconVisibility:hidden]
- > ### [Markdown 效果测试](/md/sth/Markdown测试效果.md)
- > img 标签 src 路径图片无法显示的原因。
+ > ### [html 相对路径](/md/sth/html相对路径.md)
+ > img 标签 src 路径图片无法显示的原因，同时对比 markdown 链接。
 
  > [!tip|label:2023-11-27|iconVisibility:hidden]
  > ### [docsify-插件](/md/sth/docsify-插件.md)
