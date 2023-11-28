@@ -1,3 +1,11 @@
+/****** 自适屏
+@media screen and (max-width: 768px) {
+  section.cover {
+    width: auto;
+  }
+}
+******/
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
