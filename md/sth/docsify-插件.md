@@ -175,6 +175,7 @@
   ```markdown
   <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
   ```
+
 #### 2、添加配置 <!-- {docsify-ignore} --> 
   可以根据规则修改参数内容。  
   ```html
@@ -211,8 +212,9 @@
   - {HH}: 小时; eg: 06 (24h)
   - {mm}: 分; eg: 59
   - {ss}: 秒; eg: 09
-  - {fff}: 毫秒; eg: 555
-#### 3、更多自定义配置 <!-- {docsify-ignore} --> 
+  - {fff}: 毫秒; eg: 555  
+
+#### 3、更多自定义配置  <!-- {docsify-ignore} --> 
   修改 timeUpdater.text 以内嵌 HTML  
   ```html
     window.$docsify = {
@@ -244,6 +246,7 @@
   };
   ```  
   ![示例](../../media/img/docsify-updated7.png)  
+
 #### 4、各种样式   <!-- {docsify-ignore} --> 
   ```html
   window.$docsify = {
@@ -272,6 +275,7 @@
   };
   ```  
   ![示例](../../media/img/docsify-updated6.png)  
+
 #### 5、问题 <!-- {docsify-ignore} --> 
   1. 修改单个文档，所有文档更新时间都被修改？
     使用任何一种 CI/CD 方式过程中，如果自动拉取 git 文档部署 docsify，在这个过程中可能会遇到 .md 文件修改时间被设置为 git clone your_repo 这个 CI/CD 操作的时间，这将使插件展示文件更新的时间出现错误（插件展示的时间是各个文件最后的修改时间）。
