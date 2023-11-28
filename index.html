@@ -13,7 +13,8 @@
   <meta name="description" content="etchun个人站,收集、整理日常杂项">
   <meta name="keywords" content="动漫,游戏,电影,字幕">
   <title>etchun个人站</title>
-
+  <!-- etchun 设置样式 -->
+  <link rel="stylesheet" href="plugins/css/etchun.style.css">
   <!-- docsify 的主题样式: Sample (https://jhildenbiddle.github.io/docsify-themeable) -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" href="plugins/css/vue.css">  -->  <!-- 可换另外一种 -->
@@ -72,7 +73,7 @@
       // 要忽略特定文档上的所有标题，可在页面的第一个标题后添加 <!-- {docsify-ignore-all} --> 。
       sidebarDisplayLevel: 0,  // 侧边栏自动展开层数，1 为展开到第 2 层。
       // 加载自定义导航栏,需要目录下有_navbar.md文件【√】
-      loadNavbar: true,
+      // loadNavbar: true,
       // 指定开始页，入口文件改为 /home.md
       homepage: 'home.md',
       // 开启封面页，需要目录下有_coverpage.md文件
@@ -149,9 +150,9 @@
     };
   </script>
   
-  <!-- 回到顶部功能 -->
-  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/wugenqiang/NoteBook@master/plugin/jquery.goup.js"></script>
+  <!-- 回到顶部功能
+  <script src="plugins/js/jquery.js"></script>
+  <script src="plugins/js/jquery.goup.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $.goup({
@@ -162,7 +163,13 @@
         titleAsText: true
       });
     });
-  </script>
+  </script> -->
+
+  <!-- etchun 回到顶部功能 -->
+  <button onclick="scrollToTop()">
+  <img class="btn" src="media/img/toTop.png">
+  </button>
+  <script src="plugins/js/etchun.js"></script>
 
   <!-- 渲染流程图 -->
   <script type="module">
@@ -229,5 +236,6 @@
   
   <!-- docsify-updated -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
+
 </body>
 </html>

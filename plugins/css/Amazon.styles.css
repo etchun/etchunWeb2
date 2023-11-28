@@ -16,6 +16,7 @@
   background: var(--theme-color-light);
 }
 
+
 body {
   font-size: 100%;
   line-height: 1.5;
@@ -401,7 +402,10 @@ section.cover .cover-main {
     max-height: 100px;
   }
 
-  body .sidebar-toggle { background-color: #fff; }
+  body .sidebar-toggle { 
+    background-color: transparent;
+  }
+
   body.close .sidebar-toggle {
     background-color: transparent;
     padding: 1rem;
