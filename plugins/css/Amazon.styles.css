@@ -391,7 +391,7 @@ section.cover .cover-main {
 
 @media screen and (max-width: 768px) {
   section.cover {
-    height: auto;
+    width: auto;
   }
   section.cover .cover-main {
     margin: 0 5vw;
