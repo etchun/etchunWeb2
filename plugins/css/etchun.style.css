@@ -6,13 +6,13 @@
 }
 ******/
 
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 5000px;
 }
 
 .btn {
@@ -20,20 +20,6 @@
   position:fixed;
   bottom: 10px;
   right:10px;
+  cursor: pointer
+  display: none;
 }
-
-/****** toTop 
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-  cursor: pointer;
-}
-******/
